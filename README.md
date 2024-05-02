@@ -7,14 +7,29 @@
 Before you run,
 1. install the packages with requirement.txt
 2. you can either follow the instruction below to run a series of .py files or go with a single notebook 
-3. the intermediate files you will be needing have already been created for you at foler ./operational and ./relational, if you don't want to go through with it, skip to train probe step directly
+3. the intermediate files you will be needing have already been created for you at foler https://github.com/xinyueli2896/CodeBERT/main/operational/ and https://github.com/xinyueli2896/CodeBERT/main/relational/, if you don't want to go through with it, skip to train probe step directly
 
-## get_tokenized_dataset.py
+## https://github.com/xinyueli2896/CodeBERT/main/get_tokenized_dataset.py
 
 ```
-function test() {
-  console.log("python get_tokenized_dataset.py --task YOUR_TASK");
-}
+python get_tokenized_dataset.py --task YOUR_TASK
 ```
 
+run this with setting the YOUR_TASK as 'operaitonal' or 'relational'
 
+## https://github.com/xinyueli2896/CodeBERT/main/get_activations.py
+```
+python get_activations.py --task YOUR_TASK
+```
+
+run this with setting the YOUR_TASK as 'operaitonal' or 'relational'
+
+## https://github.com/xinyueli2896/CodeBERT/main/train_probes.py
+```
+python train_probes.py --task YOUR_TASK --probe_type PROBE_TYPE
+```
+
+run this with setting the YOUR_TASK as 'operaitonal' or 'relational' and PROBE_TYPE as Linear or NonLinear
+
+## visualize your results 
+visual your results in https://github.com/xinyueli2896/CodeBERT/main/bert_code_probing.ipynb
