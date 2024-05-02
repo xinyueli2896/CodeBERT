@@ -7,9 +7,9 @@
 Before you run,
 1. install the packages with requirement.txt
 2. you can either follow the instruction below to run a series of .py files or go with a single notebook 
-3. the intermediate files you will be needing have already been created for you at foler https://github.com/xinyueli2896/CodeBERT/main/operational/ and https://github.com/xinyueli2896/CodeBERT/main/relational/, if you don't want to go through with it, skip to train probe step directly
+3. the intermediate files you will be needing have already been created for you at foler [operational](https://github.com/xinyueli2896/CodeBERT/main/operational/) and [relational](https://github.com/xinyueli2896/CodeBERT/main/relational/), if you don't want to go through with it, skip to step 3 to train probe step directly
 
-## [get_tokenized_dataset](https://github.com/xinyueli2896/CodeBERT/main/get_tokenized_dataset.py)
+## [1.get_tokenized_dataset](https://github.com/xinyueli2896/CodeBERT/main/get_tokenized_dataset.py)
 
 ```
 python get_tokenized_dataset.py --task YOUR_TASK
@@ -17,14 +17,14 @@ python get_tokenized_dataset.py --task YOUR_TASK
 
 run this with setting the YOUR_TASK as 'operaitonal' or 'relational'
 
-## [get_activations](https://github.com/xinyueli2896/CodeBERT/main/get_activations.py)
+## [2.get_activations](https://github.com/xinyueli2896/CodeBERT/main/get_activations.py)
 ```
 python get_activations.py --task YOUR_TASK
 ```
 
 run this with setting the YOUR_TASK as 'operaitonal' or 'relational'
 
-## [train_probes](https://github.com/xinyueli2896/CodeBERT/main/train_probes.py)
+## [3.train_probes](https://github.com/xinyueli2896/CodeBERT/main/train_probes.py)
 ```
 python train_probes.py --task YOUR_TASK --probe_type PROBE_TYPE
 ```
